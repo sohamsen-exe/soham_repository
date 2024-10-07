@@ -1,0 +1,33 @@
+def firstnaturalnumbers(): #METHOD 1
+    n = int(input("Enter a number :"))
+    for i in range(1, n+1):
+        print(i)
+firstnaturalnumbers()
+
+def firstnaturalnumbersmethod2(): #METHOD 2
+    n = int(input("Enter a number :"))
+    i = 1
+    while i <= n:
+        print(i)
+        i += 1
+firstnaturalnumbersmethod2()
+
+def sumofn(): #METHOD 1
+    n = int(input("Enter a number :"))
+    sum = 0
+    for i in range(1, n + 1):
+        print(sum)
+        sum += i
+    print("Final :",sum)
+sumofn()
+
+def sumofnmethod2(): #METHOD 2
+    n = int(input("Enter a number :"))
+    i = 1
+    sum = 1
+    while i <= n:
+        print(sum)
+        sum += i
+        i += 1
+    print("Final :", sum)
+sumofnmethod2()
