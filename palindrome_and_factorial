@@ -1,0 +1,43 @@
+def alphanum():
+    s = input("Enter a String :")
+    alpha = 0
+    num = 0
+    for i in s:
+        if i.isalpha():
+            alpha += 1
+        elif i.isdigit():
+            num += 1
+    print("Alphabets :", alpha)
+    print("Digits :", num)
+alphanum()
+
+def factorial(): #METHOD 1
+    n = int(input("Enter factorial number :"))
+    fact = 1
+    for i in range(1, n + 1):
+          fact *= i
+          print("Step",i,":",fact)
+#factorial()
+
+def factorialmethod2(): #METHOD 2
+    n = int(input("Enter a number :"))
+    fact = 1
+    i = 0
+    while i < n:
+        i += 1
+        fact *= i
+        print("Step",i,":",fact)
+#factorialmethod2()
+
+def palindrome(): #METHOD 1
+    s = input("Enter a string :")
+    l = len(s)
+    s1 = ''
+    for i in range(-1, -l - 1, -1):
+        s1 += s[i]
+    print("\nGiven String :",s1,"\n")
+    if s1 == s:
+        print("Given string is a Palindrome")
+    else:
+        print("Not a Palindrome")
+palindrome()
