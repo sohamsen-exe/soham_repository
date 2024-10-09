@@ -1,0 +1,17 @@
+def specialnumbers():
+    m = int(input("Enter starting number :"))
+    n = int(input("Enter last number :"))
+    if len(str(m)) == 2 and len(str(n)) == 2:
+        for i in range(m, n + 1):
+            s = str(i)
+            tens = s[0]
+            units = s[1]
+            sum = int(tens) + int(units)
+            prod = int(tens) * int(units)
+            if (sum + prod) == int(s):
+                print("\n",i, "- It is a special number\n")
+            else:
+                print(i, "- It is not a special number")
+    else:
+        print("Please provide a two digit number")
+specialnumbers()
