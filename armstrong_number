@@ -1,0 +1,14 @@
+def armstrongnumber():
+    n = int(input("Enter a Number :"))
+    s = str(n)
+    l_s = len(s)
+    sum = 0
+    for i in s:
+        sum += (int(i) ** l_s)
+    print("Given Number :", n)
+    print("Checking for Armstrong condition :", sum)
+    if sum == n:
+        print("Given Number is an Armstrong Number")
+    else:
+        print("Given Number is NOT an Armstrong Number")
+armstrongnumber()
