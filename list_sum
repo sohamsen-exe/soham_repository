@@ -1,0 +1,12 @@
+def list_sum():
+    list_1 = []
+    count = 0
+    n = int(input("Enter number of elements in List :"))
+    for i in range(n):
+        ch = int(input("Enter Element :"))
+        list_1.append(ch)
+    print("List :", list_1)
+    for i in list_1:
+        count += i
+    print("Sum of Elements :", count)
+list_sum()
