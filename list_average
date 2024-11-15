@@ -1,0 +1,11 @@
+def list_average():
+    list_1 = []
+    n = int(input("Enter number of elements in List :"))
+    for i in range(n):
+        ch = int(input("Enter Integer :"))
+        list_1.append(ch)
+    print("List :", list_1)
+    length = len(list_1)
+    s = sum(list_1)
+    print("Average :", s / length)
+list_average()
