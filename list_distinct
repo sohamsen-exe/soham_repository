@@ -1,0 +1,9 @@
+def list_distinct():
+    list_1 = []
+    n = int(input("Enter number of elements in List :"))
+    for i in range(n):
+        ch = int(input("Enter Element :"))
+        list_1.append(ch)
+    print("List :", list_1)
+    print(len(set(list_1)))
+list_distinct()
