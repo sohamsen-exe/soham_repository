@@ -1,0 +1,10 @@
+def tuple_elements():
+    listt = []
+    s = input("Enter a String :")
+    for i in s:
+        listt.append(i)
+    tup = tuple(listt)
+    print(tup)
+    print(tup[3])
+    print(tup[-4])
+tuple_elements()
